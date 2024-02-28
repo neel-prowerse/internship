@@ -1,1 +1,1 @@
-# internship
+# python development internship
