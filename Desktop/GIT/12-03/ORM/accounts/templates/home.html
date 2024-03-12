@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="bg-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="icon" href="data:image/png;base64,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" type="image/x-icon type">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <title>Registration App</title>
+    <style>
+        .table1, .tr1, .th1, .td1, .table2, .tr2, .th2, .td2
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+            column-rule: 10px;
+            column-rule-width: 10px;
+            table-layout: fixed;
+        }
+        .table1, .table2
+        {
+            width: 100%;
+            background-color: aliceblue;
+            padding: 15px;
+        }
+        .td1, .td2 
+        {
+            text-align: center;
+            padding: 15px;
+            color:chocolate;
+        }
+        .th1, .th2
+        {
+            height: 70px;
+            text-align: center;
+            padding: 15px;
+            background-color: cadetblue;
+        }
+       .td1:hover
+        {
+            background-color: burlywood;
+        }
+        img
+        {
+            width: 75%;
+            height: 35%;
+        }
+    body {
+        padding: 25px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+    }
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+
+    .light-mode {
+        background-color: white;
+        color: black;
+    }
+    </style>
+</head>
+<body>
+    <script>
+        function darkMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "dark-mode";
+        }
+        function lightMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+        }
+</script> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ORM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                </li>
+                    <a class="nav-link" href="{% url 'students' %}">Students Data</a>
+                    {% if user.is_authenticated %}
+                        <a class="nav-link" href="{% url 'logoutaccount' %}">Logout ( {{ user.username }} )</a>
+                    {% else %}
+                        <a class="nav-link" href="{% url 'loginaccount' %}">Login</a>
+                        <a class="nav-link" href="{% url 'signupaccount' %}">Sign Up</a>
+                    {% endif %}
+                <li class="nav-item-dropdown">
+                    <button onclick="darkMode()">Darkmode</button>
+                    <button onclick="lightMode()">LightMode</button>
+                </li>
+                </ul>
+                </div>
+            </div>
+    </nav>
+    <div class="container">
+        {% block content %}
+        <table class="table2">
+            <tr class="tr2">
+                <th class="th2">Welcome To Students Page</th>
+            </tr>
+            <tr class="tr2">
+                <td class="td2">A student information system (SIS) is a software application that stores and manages student data. SIS provides teachers and administrators with access to student data, such as academic, schedule, demographic, behavior, and health information.</td>
+            </tr>
+            <tr class="tr2">
+                <td class="td2"><img src="https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Students Image"></td>
+            </tr>
+            <tr class="tr2">
+                <td class="td2">
+                    <a href="{% url 'signupaccount' %}" class="btn btn-warning">For Signup Click Here </a><br><br>
+                </td>
+            </tr>
+            </table>
+        
+        {% endblock content %}
+    </div>
+</body>
+</html>
